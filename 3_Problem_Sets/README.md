@@ -45,5 +45,5 @@ Please check this repository regularly for updates.
 ## 📌 Note  
 
 For the **class project**, see the `Project.pdf` file and the dedicated `Project README`.  
-For the **lecture slides**, check the `lectures/` folder.  
+For the **lecture slides**, check the `2_Lectures/` folder.  
 
