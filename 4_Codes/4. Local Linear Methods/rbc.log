@@ -1,0 +1,86 @@
+Starting Dynare (version 6.4).
+Calling Dynare with arguments: none
+Starting preprocessing of the model file ...
+Found 7 equation(s).
+Evaluating expressions...
+Computing static model derivatives (order 1).
+Normalizing the static model...
+Finding the optimal block decomposition of the static model...
+3 block(s) found:
+  2 recursive block(s) and 1 simultaneous block(s).
+  the largest simultaneous block has 5 equation(s)
+                                 and 5 feedback variable(s).
+Computing dynamic model derivatives (order 1).
+Normalizing the dynamic model...
+Finding the optimal block decomposition of the dynamic model...
+3 block(s) found:
+  2 recursive block(s) and 1 simultaneous block(s).
+  the largest simultaneous block has 5 equation(s)
+                                 and 5 feedback variable(s).
+Preprocessing completed.
+Preprocessing time: 0h00m00s.
+
+STEADY-STATE RESULTS:
+
+y 		 1.01739
+c 		 0.778266
+k 		 9.56491
+i 		 0.239123
+h 		 0.337406
+r 		 0.0351
+z 		 0
+
+MODEL SUMMARY
+
+  Number of variables:         7
+  Number of stochastic shocks: 1
+  Number of state variables:   2
+  Number of jumpers:           3
+  Number of static variables:  3
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables           e
+e            0.000010
+
+POLICY AND TRANSITION FUNCTIONS
+                                   y               c               k               i               h               r               z
+Constant                    1.017389        0.778266        9.564906        0.239123        0.337406        0.035100               0
+k(-1)                       0.017479        0.043736        0.948743       -0.026257       -0.008723       -0.002879               0
+z(-1)                       0.949588        0.205980        0.743608        0.743608        0.149495        0.030033        0.950000
+e                           0.999566        0.216821        0.782745        0.782745        0.157363        0.031614        1.000000
+
+
+THEORETICAL MOMENTS (HP filter, lambda = 1600)
+VARIABLE         MEAN  STD. DEV.   VARIANCE
+y              1.0174     0.0042     0.0000
+c              0.7783     0.0011     0.0000
+k              9.5649     0.0115     0.0001
+i              0.2391     0.0033     0.0000
+h              0.3374     0.0007     0.0000
+r              0.0351     0.0001     0.0000
+z              0.0000     0.0042     0.0000
+
+
+
+MATRIX OF CORRELATIONS (HP filter, lambda = 1600)
+Variables         y       c       k       i       h       r       z
+y            1.0000  0.9005  0.3628  0.9902  0.9801  0.9568  0.9989
+c            0.9005  1.0000  0.7320  0.8309  0.7962  0.7351  0.8786
+k            0.3628  0.7320  1.0000  0.2291  0.1706  0.0762  0.3178
+i            0.9902  0.8309  0.2291  1.0000  0.9982  0.9880  0.9958
+h            0.9801  0.7962  0.1706  0.9982  1.0000  0.9955  0.9885
+r            0.9568  0.7351  0.0762  0.9880  0.9955  1.0000  0.9696
+z            0.9989  0.8786  0.3178  0.9958  0.9885  0.9696  1.0000
+
+
+
+COEFFICIENTS OF AUTOCORRELATION (HP filter, lambda = 1600)
+Order           1        2        3        4        5
+y          0.7182   0.4789   0.2801   0.1189  -0.0081
+c          0.8067   0.6188   0.4425   0.2822   0.1406
+k          0.9586   0.8589   0.7214   0.5626   0.3960
+i          0.7070   0.4612   0.2596   0.0983  -0.0269
+h          0.7052   0.4585   0.2564   0.0950  -0.0298
+r          0.7063   0.4601   0.2582   0.0969  -0.0281
+z          0.7133   0.4711   0.2711   0.1098  -0.0163

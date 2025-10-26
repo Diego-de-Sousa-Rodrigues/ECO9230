@@ -1,0 +1,44 @@
+Starting Dynare (version 4.4.3).
+Starting preprocessing of the model file ...
+Found 7 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+Processing outputs ...done
+Preprocessing completed.
+Starting MATLAB/Octave computing.
+
+STEADY-STATE RESULTS:
+
+c    		 0.642645
+k    		 1.48996
+rq   		 0.252632
+wq   		 0.764226
+Rbig 		 1.05263
+sq   		 1.05263
+qt   		 2.30028
+
+STEADY-STATE RESULTS:
+
+c    		 0.642645
+k    		 1.48996
+rq   		 0.252632
+wq   		 0.764226
+Rbig 		 1.05263
+sq   		 1.05263
+qt   		 1.9169
+-----------------------------------------------------
+MODEL SIMULATION:
+
+
+Simulation concluded successfully after 4 iterations.
+Total time of simulation        :      0.428
+Convergency obtained.
+-----------------------------------------------------
+
+[Warning: MATLAB has disabled some advanced graphics rendering features by switching to software OpenGL. For more
+information, click <a href="matlab:opengl('problems')">here</a>.] 
+Total computing time : 0h00m32s
+Note: warning(s) encountered in MATLAB/Octave code

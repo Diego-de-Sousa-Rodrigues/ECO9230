@@ -1,0 +1,84 @@
+Starting Dynare (version 6.4).
+Calling Dynare with arguments: none
+Starting preprocessing of the model file ...
+Found 4 equation(s).
+Evaluating expressions...
+Computing static model derivatives (order 1).
+Normalizing the static model...
+Finding the optimal block decomposition of the static model...
+2 block(s) found:
+  1 recursive block(s) and 1 simultaneous block(s).
+  the largest simultaneous block has 3 equation(s)
+                                 and 3 feedback variable(s).
+Computing dynamic model derivatives (order 2).
+Normalizing the dynamic model...
+Finding the optimal block decomposition of the dynamic model...
+2 block(s) found:
+  1 recursive block(s) and 1 simultaneous block(s).
+  the largest simultaneous block has 3 equation(s)
+                                 and 3 feedback variable(s).
+Preprocessing completed.
+Preprocessing time: 0h00m00s.
+
+STEADY-STATE RESULTS:
+
+y 		 0
+c 		 0
+k 		 0
+z 		 0
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+            0.33             0.33                0
+            0.95             0.95                0
+           3.061            3.061                0
+
+There are 1 eigenvalue(s) larger than 1 in modulus for 1 forward-looking variable(s)
+The rank condition is verified.
+
+
+MODEL SUMMARY
+
+  Number of variables:         4
+  Number of stochastic shocks: 1
+  Number of state variables:   2
+  Number of jumpers:           1
+  Number of static variables:  1
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables           e
+e            0.000100
+
+POLICY AND TRANSITION FUNCTIONS
+                                   y               c               k               z
+k(-1)                       0.330000        0.330000        0.330000               0
+z(-1)                       0.950000        0.950000        0.950000        0.950000
+e                           1.000000        1.000000        1.000000        1.000000
+
+
+THEORETICAL MOMENTS
+VARIABLE         MEAN  STD. DEV.   VARIANCE
+y              0.0000     0.0469     0.0022
+c              0.0000     0.0469     0.0022
+k              0.0000     0.0469     0.0022
+z              0.0000     0.0320     0.0010
+
+
+
+MATRIX OF CORRELATIONS
+Variables         y       c       k       z
+y            1.0000  1.0000  1.0000  0.9941
+c            1.0000  1.0000  1.0000  0.9941
+k            1.0000  1.0000  1.0000  0.9941
+z            0.9941  0.9941  0.9941  1.0000
+
+
+
+COEFFICIENTS OF AUTOCORRELATION
+Order          1       2       3       4       5
+y         0.9745  0.9339  0.8898  0.8462  0.8042
+c         0.9745  0.9339  0.8898  0.8462  0.8042
+k         0.9745  0.9339  0.8898  0.8462  0.8042
+z         0.9500  0.9025  0.8574  0.8145  0.7738
+Total computing time : 0h00m01s

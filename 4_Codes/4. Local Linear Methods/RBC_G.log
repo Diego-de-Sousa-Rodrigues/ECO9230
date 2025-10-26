@@ -1,0 +1,142 @@
+Starting Dynare (version 6.4).
+Calling Dynare with arguments: none
+Starting preprocessing of the model file ...
+Found 9 equation(s).
+Evaluating expressions...
+Computing static model derivatives (order 1).
+Normalizing the static model...
+Finding the optimal block decomposition of the static model...
+4 block(s) found:
+  3 recursive block(s) and 1 simultaneous block(s).
+  the largest simultaneous block has 6 equation(s)
+                                 and 6 feedback variable(s).
+Computing dynamic model derivatives (order 2).
+Normalizing the dynamic model...
+Finding the optimal block decomposition of the dynamic model...
+2 block(s) found:
+  1 recursive block(s) and 1 simultaneous block(s).
+  the largest simultaneous block has 7 equation(s)
+                                 and 7 feedback variable(s).
+Preprocessing completed.
+Preprocessing time: 0h00m00s.
+
+STEADY-STATE RESULTS:
+
+Y 		 0
+I 		 0
+C 		 0
+R 		 0
+K 		 0
+W 		 0
+L 		 0
+A 		 0
+G 		 0
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+             0.9              0.9                0
+            0.95             0.95                0
+          0.9614           0.9614                0
+           1.056            1.056                0
+       2.798e+16        2.798e+16                0
+
+There are 2 eigenvalue(s) larger than 1 in modulus for 2 forward-looking variable(s)
+The rank condition is verified.
+
+MODEL_DIAGNOSTICS:  No obvious problems with this mod-file were detected.
+
+Information about RBC_G (dynamic model)
+
+The following variables appear with a lag and are therefore states:
+K(-1)
+A(-1)
+G(-1)
+
+The following variables appear with a lead and are therefore forward-looking variables:
+C(1)
+R(1)
+
+The following variables do not appear with a lead or lag and are therefore purely static variables:
+Y
+I
+W
+L
+
+
+MODEL SUMMARY
+
+  Number of variables:         9
+  Number of stochastic shocks: 2
+  Number of state variables:   3
+  Number of jumpers:           2
+  Number of static variables:  4
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables           e        eG
+e            0.000100  0.000000
+eG           0.000000  0.000100
+
+POLICY AND TRANSITION FUNCTIONS
+                                   Y               I               C               R               K               W               L               A               G
+K(-1)                       0.193209       -0.543989        0.398126       -0.806791        0.961400        0.434426       -0.241217               0               0
+A(-1)                       1.042228        3.555020        0.343752        1.042228        0.088876        0.900339        0.141890        0.950000               0
+G(-1)                       0.038065       -0.457675       -0.054169        0.038065       -0.011442       -0.020497        0.058562               0        0.900000
+e                           1.097082        3.742127        0.361844        1.097082        0.093553        0.947725        0.149358        1.000000               0
+eG                          0.042294       -0.508527       -0.060188        0.042294       -0.012713       -0.022774        0.065068               0        1.000000
+
+
+THEORETICAL MOMENTS
+VARIABLE         MEAN  STD. DEV.   VARIANCE
+Y              0.0000     0.0422     0.0018
+I              0.0000     0.1047     0.0110
+C              0.0000     0.0293     0.0009
+R              0.0000     0.0330     0.0011
+K              0.0000     0.0513     0.0026
+W              0.0000     0.0478     0.0023
+L              0.0000     0.0102     0.0001
+A              0.0000     0.0320     0.0010
+G              0.0000     0.0229     0.0005
+
+
+
+VARIANCE DECOMPOSITION (in percent)
+          e      eG
+Y     99.96    0.04
+I     98.94    1.06
+C     99.24    0.76
+R     98.71    1.29
+K     99.41    0.59
+W     99.82    0.18
+L     95.64    4.36
+A    100.00    0.00
+G      0.00  100.00
+
+
+
+MATRIX OF CORRELATIONS
+Variables          Y        I        C        R        K        W        L        A        G
+Y             1.0000   0.9192   0.9232   0.0848   0.7951   0.9821  -0.4681   0.9835   0.0141
+I             0.9192   1.0000   0.7175   0.4437   0.5093   0.8384  -0.1287   0.9736  -0.1013
+C             0.9232   0.7175   1.0000  -0.3002   0.9648   0.9791  -0.7718   0.8416  -0.0736
+R             0.0848   0.4437  -0.3002   1.0000  -0.5368  -0.1023   0.8307   0.2616   0.0770
+K             0.7951   0.5093   0.9648  -0.5368   1.0000   0.8940  -0.9030   0.6737  -0.0422
+W             0.9821   0.8384   0.9791  -0.1023   0.8940   1.0000  -0.6263   0.9333  -0.0286
+L            -0.4681  -0.1287  -0.7718   0.8307  -0.9030  -0.6263   1.0000  -0.3079   0.1925
+A             0.9835   0.9736   0.8416   0.2616   0.6737   0.9333  -0.3079   1.0000   0.0000
+G             0.0141  -0.1013  -0.0736   0.0770  -0.0422  -0.0286   0.1925   0.0000   1.0000
+
+
+
+COEFFICIENTS OF AUTOCORRELATION
+Order          1       2       3       4       5
+Y         0.9655  0.9322  0.8999  0.8687  0.8385
+I         0.9327  0.8695  0.8101  0.7543  0.7020
+C         0.9919  0.9827  0.9723  0.9609  0.9487
+R         0.9395  0.8824  0.8285  0.7777  0.7298
+K         0.9990  0.9961  0.9916  0.9855  0.9780
+W         0.9801  0.9601  0.9399  0.9196  0.8994
+L         0.9845  0.9684  0.9519  0.9350  0.9177
+A         0.9500  0.9025  0.8574  0.8145  0.7738
+G         0.9000  0.8100  0.7290  0.6561  0.5905
+Total computing time : 0h00m03s

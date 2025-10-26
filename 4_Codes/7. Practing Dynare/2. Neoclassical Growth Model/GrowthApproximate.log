@@ -1,0 +1,79 @@
+Starting Dynare (version 4.4.3).
+Starting preprocessing of the model file ...
+WARNING: GrowthApproximate.mod:3.1-13: periods: this command is now deprecated and may be removed in a future version of Dynare. Please use the ''periods'' option of the ''simul'' command instead.
+WARNING: GrowthApproximate.mod:40.13-21: dr_algo option is now deprecated, and may be removed in a future version of Dynare
+Found 4 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+ - order 2
+Processing outputs ...done
+Preprocessing completed.
+Starting MATLAB/Octave computing.
+
+STEADY-STATE RESULTS:
+
+c   		 1.49163
+k   		 29.2885
+lab 		 0.291593
+z   		 0
+
+MODEL SUMMARY
+
+  Number of variables:         4
+  Number of stochastic shocks: 1
+  Number of state variables:   2
+  Number of jumpers:           3
+  Number of static variables:  0
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+
+Variables       e    
+e            1.000000
+
+POLICY AND TRANSITION FUNCTIONS
+                                     c               k               lab             z  
+Constant                    1.491624       29.288524        0.291594               0
+(correction)               -0.000002        0.000004               0               0
+k(-1)                       0.027972        0.978257       -0.001831               0
+z(-1)                       0.622876        1.853488        0.191284        0.950000
+e                           0.004590        0.013657        0.001409        0.007000
+k(-1),k(-1)                -0.000182       -0.000086        0.000025               0
+z(-1),k(-1)                 0.007307        0.024441        0.000712               0
+z(-1),z(-1)                 0.237404        1.157808       -0.008033               0
+e,e                         0.000013        0.000063               0               0
+k(-1),e                     0.000054        0.000180        0.000005               0
+z(-1),e                     0.003499        0.017062       -0.000118               0
+
+
+MOMENTS OF SIMULATED VARIABLES
+
+VARIABLE      MEAN    STD. DEV.   VARIANCE   SKEWNESS   KURTOSIS 
+c            1.467763   0.036832   0.001357   0.259835   0.247068
+k           28.619196   0.980002   0.960405   0.212080   0.056785
+lab          0.291282   0.003865   0.000015  -0.197713   0.091466
+z           -0.007843   0.022039   0.000486   0.170511   0.259799
+
+
+CORRELATION OF SIMULATED VARIABLES
+
+VARIABLE      c       k      lab      z   
+c           1.0000  0.9535  0.4271  0.7606
+k           0.9535  1.0000  0.1348  0.5296
+lab         0.4271  0.1348  1.0000  0.9119
+z           0.7606  0.5296  0.9119  1.0000
+
+
+AUTOCORRELATION OF SIMULATED VARIABLES
+
+VARIABLE      1       2       3       4       5   
+c           0.9915  0.9828  0.9728  0.9627  0.9523
+k           0.9983  0.9962  0.9930  0.9886  0.9831
+lab         0.9330  0.8657  0.7970  0.7370  0.6844
+z           0.9496  0.8989  0.8467  0.8006  0.7597
+Total computing time : 0h00m05s
+Note: 2 warning(s) encountered in the preprocessor
+Note: warning(s) encountered in MATLAB/Octave code
